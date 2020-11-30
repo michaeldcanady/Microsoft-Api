@@ -55,11 +55,6 @@ type automaticRepliesSetting struct{
   Status                 string           `json "status"`
 }
 
-type DateTimeTimeZone struct{
-  DateTime string `json "dateTime"`
-  TimeZone string `json "timeZone"`
-}
-
 type WorkingHours struct{
   DaysOfWeek []string     `json "daysOfWeek"`
   StartTime  time.Time    `json "startTime"`
@@ -111,21 +106,6 @@ type provisionedPlan struct{
   capabilityStatus   string `json "capabilityStatus"`
   provisioningStatus string `json "provisioningStatus"`
   service            string `json "service"`
-}
-
-type Calendar struct{
-  allowedOnlineMeetingProviders []string     `json "allowedOnlineMeetingProviders"`
-  canEdit                       bool         `json "canEdit"`
-  canShare                      bool         `json "canShare"`
-  canViewPrivateItems           bool         `json "canViewPrivateItems"`
-  changeKey                     string       `json "changeKey"`
-  color                         string       `json "color"`
-  defaultOnlineMeetingProvider  string       `json "defaultOnlineMeetingProvider"`
-  id                            string       `json "id"`
-  isRemovable                   bool         `json "isRemovable"`
-  isTallyingResponses           bool         `json "isTallyingResponses"`
-  name                          string       `json "name"`
-  owner                         EmailAddress `json "owner"`
 }
 
 type CalendarGroup struct{

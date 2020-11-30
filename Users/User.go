@@ -78,17 +78,17 @@ type User struct{
   userType                        string
   calendar                        graph.Calendar
   calendarGroups                  []graph.CalendarGroup
-  calendarView": [{"@odata.type": "microsoft.graph.event"}],
+  calendarView                    []Event
   calendars                       []graph.calendar
-  contacts": [{"@odata.type": "microsoft.graph.contact"}],
-  contactFolders": [{"@odata.type": "microsoft.graph.contactFolder"}],
-  createdObjects": [{"@odata.type": "microsoft.graph.directoryObject"}],
-  directReports": [{"@odata.type": "microsoft.graph.directoryObject"}],
+  contacts                        Contact
+  contactFolders                  []ContactFolder
+  createdObjects                  []DirectoryObject
+  directReports                   []DirectoryObject
   drive": {"@odata.type": "microsoft.graph.drive"},
   drives": [{"@odata.type": "microsoft.graph.drive"}],
   insights": {"@odata.type": "microsoft.graph.itemInsights"},
   settings": {"@odata.type": "microsoft.graph.userSettings"},
-  events": [{"@odata.type": "microsoft.graph.event"}],
+  events                          []Event
   extensions": [{"@odata.type": "microsoft.graph.extension"}],
   inferenceClassification": {"@odata.type": "microsoft.graph.inferenceClassification"},
   mailFolders": [{"@odata.type": "microsoft.graph.mailFolder"}],
