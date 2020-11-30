@@ -1,4 +1,4 @@
-package outlook
+package main
 
 import(
   "strings"
@@ -87,5 +87,24 @@ func Search(value string,location ...string) string{
     return fmt.Sprintf("$search='%s'",value)
   }else{
     return fmt.Sprintf("$search='%s:%s'",strings.Join(location,""),value)
+  }
+}
+
+// Selects what values to specifically return
+func Select(values ...string) string{
+  return fmt.Sprintf("$select=%s",strings.Join(values,","))
+}
+
+// Skips all values >= count
+func Skip(count int) string{
+  return fmt.Sprintf("$skip=%v",count)
+}
+
+// returns first count
+func Top(count int) string{
+  if count >= 1 && count <= 999{
+    return fmt.Sprintf("$top=%v",count)
+  }else{
+    panic("count exceeds 1-999 inclusive range")
   }
 }

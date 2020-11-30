@@ -1,13 +1,12 @@
 package main
 
 import(
-  "github.com/michaeldcanady/GoOutlook/GoOutlook"
+  //"github.com/michaeldcanady/GoOutlook/GoOutlook"
   "fmt"
 )
 
 
 func main(){
-  client := outlook.NewClient("dmcanady","********")
-  fmt.Println(client.PULL())
-  fmt.Println(outlook.Search("Jimmy Fallon",))
+  client := NewClient("dmcanady","**************")
+  fmt.Println(client.PULL("v1.0","me/drive",Select("from","subject")))
 }
