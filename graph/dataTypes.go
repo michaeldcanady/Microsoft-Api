@@ -36,5 +36,13 @@ type LicenseAssignmentState struct{
 }
 
 type MailboxSettings struct{
-
+  "archiveFolder": "string",
+  "automaticRepliesSetting": {"@odata.type": "microsoft.graph.automaticRepliesSetting"},
+  "dateFormat": "string",
+  "delegateMeetingMessageDeliveryOptions": "String",
+  "language": {"@odata.type": "microsoft.graph.localeInfo"},
+  "timeFormat": "string",
+  "timeZone": "string",
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
 }
+
