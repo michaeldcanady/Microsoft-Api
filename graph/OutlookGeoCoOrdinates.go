@@ -1,4 +1,4 @@
-package outlook
+package graph
 
 import(
 
@@ -10,10 +10,4 @@ type GeoCoordinates struct{
   AltitudeAccuracy float64
   Latitude float64
   Longitude float64
-}
-
-
-type TimeZone struct{
-  DateTime string
-  TimeZone string
 }

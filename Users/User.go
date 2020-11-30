@@ -6,80 +6,80 @@ import(
 )
 
 type User struct{
-  aboutMe string
-  accountEnabled bool `json "accountEnabled"`
-  ageGroup string
-  assignedLicenses graph.AssignedLicense
-  assignedPlans graph.AssignedPlan
-  birthday time.Time
-  businessPhones []string
-  city string
-  companyName string
-  consentProvidedForMinor string
-  country string
-  createdDateTime string `json "createdDateTime"`
-  creationType string
-  deletedDateTime time.Time
-  department string
-  displayName string
-  employeeHireDate string `json "employeeHireDate"`
-  employeeId string
-  employeeOrgData graph.EmployeeOrgData
-  employeeType string
-  externalUserState string `json "externalUserState"`
+  aboutMe                         string
+  accountEnabled                  bool `json "accountEnabled"`
+  ageGroup                        string
+  assignedLicenses                graph.AssignedLicense
+  assignedPlans                   graph.AssignedPlan
+  birthday                        time.Time
+  businessPhones                  []string
+  city                            string
+  companyName                     string
+  consentProvidedForMinor         string
+  country                         string
+  createdDateTime                 string `json "createdDateTime"`
+  creationType                    string
+  deletedDateTime                 time.Time
+  department                      string
+  displayName                     string
+  employeeHireDate                string `json "employeeHireDate"`
+  employeeId                      string
+  employeeOrgData                 graph.EmployeeOrgData
+  employeeType                    string
+  externalUserState               string `json "externalUserState"`
   externalUserStateChangeDateTime string `json "externalUserStateChangeDateTime"`
-  faxNumber string
-  givenName string
-  hireDate time.Time
-  id string
-  identities graph.ObjectIdentity
-  interests []string
-  isResourceAccount bool
-  jobTitle string
-  legalAgeGroupClassification string
-  licenseAssignmentStates graph.LicenseAssignmentState
-  mail string
-  mailboxSettings": {"@odata.type": "microsoft.graph.mailboxSettings"},
-  mailNickname string
-  mobilePhone string
-  mySite string
-  officeLocation string
-  onPremisesDistinguishedName string
-  onPremisesDomainName string
-  onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  onPremisesImmutableId string
-  onPremisesLastSyncDateTime time.Time
-  onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
-  onPremisesSamAccountName string
-  onPremisesSecurityIdentifier string
-  onPremisesSyncEnabled bool
-  onPremisesUserPrincipalName string
-  otherMails []string
-  passwordPolicies string
-  passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
-  pastProjects []string
-  postalCode string
-  preferredDataLocation string
-  preferredLanguage string
-  preferredName string
-  provisionedPlans": [{"@odata.type": "microsoft.graph.provisionedPlan"}],
-  proxyAddresses []string
-  refreshTokensValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  responsibilities []string
-  schools []string
-  showInAddressList bool
-  signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
-  skills []string
-  state string
-  streetAddress string
-  surname string
-  usageLocation string
-  userPrincipalName string
-  userType string
-  calendar": {"@odata.type": "microsoft.graph.calendar"},
-  calendarGroups": [{"@odata.type": "microsoft.graph.calendarGroup"}],
+  faxNumber                       string
+  givenName                       string
+  hireDate                        time.Time
+  id                              string
+  identities                      graph.ObjectIdentity
+  interests                       []string
+  isResourceAccount               bool
+  jobTitle                        string
+  legalAgeGroupClassification     string
+  licenseAssignmentStates         graph.LicenseAssignmentState
+  mail                            string
+  mailboxSettings                 graph.MailboxSettings
+  mailNickname                    string
+  mobilePhone                     string
+  mySite                          string
+  officeLocation                  string
+  onPremisesDistinguishedName     string
+  onPremisesDomainName            string
+  onPremisesExtensionAttributes   graph.onPremisesExtensionAttributes
+  onPremisesImmutableId           string
+  onPremisesLastSyncDateTime      time.Time
+  onPremisesProvisioningErrors    []graph.onPremisesProvisioningError
+  onPremisesSamAccountName        string
+  onPremisesSecurityIdentifier    string
+  onPremisesSyncEnabled           bool
+  onPremisesUserPrincipalName     string
+  otherMails                      []string
+  passwordPolicies                string
+  passwordProfile                 graph.passwordProfile
+  pastProjects                    []string
+  postalCode                      string
+  preferredDataLocation           string
+  preferredLanguage               string
+  preferredName                   string
+  provisionedPlans                graph.provisionedPlan
+  proxyAddresses                  []string
+  refreshTokensValidFromDateTime  time.Time
+  responsibilities                []string
+  schools                         []string
+  showInAddressList               bool
+  signInSessionsValidFromDateTime time.Time
+  skills                          []string
+  state                           string
+  streetAddress                   string
+  surname                         string
+  usageLocation                   string
+  userPrincipalName               string
+  userType                        string
+  calendar                        graph.Calendar
+  calendarGroups                  []graph.CalendarGroup
   calendarView": [{"@odata.type": "microsoft.graph.event"}],
-  calendars": [{"@odata.type": "microsoft.graph.calendar"}],
+  calendars                       []graph.calendar
   contacts": [{"@odata.type": "microsoft.graph.contact"}],
   contactFolders": [{"@odata.type": "microsoft.graph.contactFolder"}],
   createdObjects": [{"@odata.type": "microsoft.graph.directoryObject"}],
