@@ -5,14 +5,14 @@ import(
 )
 
 type StaffMember struct{
-  "availabilityIsAffectedByPersonalCalendar": true,
-  "colorIndex": 1024,
-  "displayName": "String",
-  "emailAddress": "String",
-  "id": "String (identifier)",
-  "role": "string",
-  "useBusinessHours": true,
-  "workingHours": [{"@odata.type": "microsoft.graph.bookingWorkHours"}]
+  AvailabilityIsAffectedByPersonalCalendar bool
+  colorIndex int
+  displayName string
+  emailAddress string
+  id string
+  role string
+  useBusinessHours bool
+  workingHours WorkHours
 }
 
 func (s *StaffMember) LIST() []StaffMember{

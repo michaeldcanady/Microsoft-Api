@@ -38,3 +38,11 @@ func (b *Business) UPDATE() Business{
 func (b *Business) DELETE(){
 
 }
+
+func (b *Business) PUBLISH(){
+
+}
+
+func (b *Business) UNPUBLISH(){
+
+}

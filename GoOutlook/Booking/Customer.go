@@ -11,7 +11,7 @@ type Customer struct{
 }
 
 func (c *Customer) LIST() []Customer{
-
+  URL = "https://graph.microsoft.com/beta/bookingBusinesses"
 }
 
 func (c *Customer) CREATE() Customer{
@@ -27,5 +27,5 @@ func (c *Customer) UPDATE() Customer{
 }
 
 func (c *Customer) DELETE() {
-  
+
 }
