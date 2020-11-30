@@ -1,6 +1,6 @@
-# Contributing to User-Removal
+# Contributing to Microsoft-Api
 
-The following is a set of guidelines for contributing to User-Removal and its packages, which are hosted in the [User-Remover repository](https://github.com/michaeldcanady/User-Remover) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to User-Removal and its packages, which are hosted in the [Microsoft-Api repository](https://github.com/michaeldcanady/Microsoft-Api) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 
 ### Table of Contents
