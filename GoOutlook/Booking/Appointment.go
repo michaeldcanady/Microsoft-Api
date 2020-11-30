@@ -1,4 +1,4 @@
-package booking
+package main
 
 import(
   "time"
@@ -35,26 +35,26 @@ type Appointment struct{
 }
 
 // Gets a list of all booking Appointments
-func (a *Appointment) LIST()(){
+func (a *Appointment) LIST() []Appointment{
 
 }
 
-func (a *Appointment) CREATE()(){
+func (a *Appointment) CREATE() Appointment{
 
 }
 
-func (a *Appointment) GET()(){
+func (a *Appointment) GET() Appointment{
 
 }
 
-func (a *Appointment) UPDATE()(){
+func (a *Appointment) UPDATE() Appointment{
 
 }
 
-func (a *Appointment) DELETE()(){
+func (a *Appointment) DELETE(){
 
 }
 
-func (a *Appointment) CANCEL()(){
+func (a *Appointment) CANCEL(){
 
 }

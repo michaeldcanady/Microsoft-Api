@@ -1,20 +1,40 @@
-package booking
+package main
 
 import(
 
 )
 
 type Business struct{
-  address {"@odata.type": "microsoft.graph.physicalAddress"},
-  businessHours [{"@odata.type": "microsoft.graph.bookingWorkHours"}],
+  address physicalAddress
+  businessHours []WorkHours
   businessType string
   defaultCurrencyIso string
   displayName string
   email string
   id string
   isPublished bool
-  phone String
+  phone string
   publicUrl string
-  schedulingPolicy {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
+  schedulingPolicy SchedulingPolicy
   webSiteUrl string
+}
+
+func (b *Business) LIST() []Business{
+
+}
+
+func (b *Business) CREATE() Business{
+
+}
+
+func (b *Business) GET() Business{
+
+}
+
+func (b *Business) UPDATE() Business{
+
+}
+
+func (b *Business) DELETE(){
+
 }
