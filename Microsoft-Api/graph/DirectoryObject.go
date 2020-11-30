@@ -5,5 +5,5 @@ import(
 )
 
 type DirectoryObject struct{
-  Id string
+  Id string `json "id"`
 }
