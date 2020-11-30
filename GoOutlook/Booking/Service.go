@@ -1,23 +1,43 @@
 package main
 
 import(
-
+  "time"
 )
 
 type Service struct {
-  "defaultDuration": "String (timestamp)",
-  "defaultLocation": {"@odata.type": "microsoft.graph.location"},
-  "defaultPrice": 1024,
-  "defaultPriceType": "string",
-  "defaultReminders": [{"@odata.type": "microsoft.graph.bookingReminder"}],
-  "description": "String",
-  "displayName": "String",
-  "emailAddress": "String",
-  "id": "String (identifier)",
-  "isHiddenFromCustomers": true,
-  "notes": "String",
-  "postBuffer": "String (timestamp)",
-  "preBuffer": "String (timestamp)",
-  "schedulingPolicy": {"@odata.type": "microsoft.graph.bookingSchedulingPolicy"},
-  "staffMemberIds": ["String"]
+  defaultDuration time.Time
+  defaultLocation Location
+  defaultPrice int
+  defaultPriceType string
+  defaultReminders Reminder
+  description string
+  displayName string
+  emailAddress string
+  id string
+  isHiddenFromCustomers bool
+  notes string
+  postBuffer time.Time
+  preBuffer time.Time
+  schedulingPolicy SchedulingPolicy
+  staffMemberIds []string
+}
+
+func (s *Service) LIST() []Service{
+
+}
+
+func (s *Service) CREATE() Service{
+
+}
+
+func (s *Service) GET() Service{
+
+}
+
+func (s *Service) UPDATE() Service{
+
+}
+
+func (s *Service) DELETE() Service{
+
 }
