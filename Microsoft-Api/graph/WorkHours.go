@@ -5,6 +5,6 @@ import(
 )
 
 type WorkHours struct{
-  Day string
-  TimeSlots []WorkTimeSlot
+  Day       string         `json "day"`
+  TimeSlots []WorkTimeSlot `json "timeSlotss"`
 }

@@ -5,6 +5,6 @@ import(
 )
 
 type responseStatus struct{
-  response String    `json "response"`
-  time     time.Time `json "time"`
+  Response String    `json "response"`
+  Time     time.Time `json "time"`
 }

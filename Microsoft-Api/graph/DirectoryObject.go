@@ -5,5 +5,5 @@ import(
 )
 
 type DirectoryObject struct{
-  id string
+  Id string
 }

@@ -5,6 +5,6 @@ import(
 )
 
 type WorkTimeSlot struct{
-  Start time.Time
-  End time.Time
+  Start time.Time `json "start"`
+  End   time.Time `json "end"`
 }

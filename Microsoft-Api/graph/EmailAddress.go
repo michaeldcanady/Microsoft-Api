@@ -5,6 +5,6 @@ import(
 )
 
 type EmailAddress struct{
-  address string `json "address"`
-  name    string `json "name"`
+  Address string `json "address"`
+  Name    string `json "name"`
 }

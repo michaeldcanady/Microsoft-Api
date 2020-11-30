@@ -1,11 +1,11 @@
 package graph
 
 import(
-
+  "time"
 )
 
 type Reminder struct{
-  Message string
-  Offset time.Time
-  Recipients string
+  Message    string    `json "message"`
+  Offset     time.Time `json "offset"`
+  Recipients string    `json "recipients"`
 }

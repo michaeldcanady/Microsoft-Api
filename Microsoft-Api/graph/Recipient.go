@@ -5,5 +5,5 @@ import(
 )
 
 type Recipient struct{
-  emailAddress EmailAddress
+  EmailAddress EmailAddress `json "emailAddress"`
 }

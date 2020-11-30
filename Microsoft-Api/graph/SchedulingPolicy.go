@@ -5,9 +5,9 @@ import(
 )
 
 type SchedulingPolicy struct{
-  allowStaffSelection bool
-  maximumAdvance time.Time
-  minimumLeadTime time.Time
-  sendConfirmationsToOwner bool
-  timeSlotInterval time.Time
+  allowStaffSelection      bool      `json "allowStaffSelection"`
+  MaximumAdvance           time.Time `json "maximumAdvance"`
+  MinimumLeadTime          time.Time `json "minimumLeadTime"`
+  SendConfirmationsToOwner bool      `json "sendConfirmationsToOwner"`
+  TimeSlotInterval         time.Time `json "timeSlotInterval"`
 }

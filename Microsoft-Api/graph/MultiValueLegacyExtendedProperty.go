@@ -5,6 +5,6 @@ import(
 )
 
 type MultiValueLegacyExtendedProperty struct{
-  id    string
-  value []string
+  Id    string   `json "id"`
+  Value []string `json "value"`
 }
