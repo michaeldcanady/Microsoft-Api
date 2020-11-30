@@ -12,6 +12,18 @@ type SchedulingPolicy struct{
   timeSlotInterval time.Time
 }
 
+type Location struct{
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
+  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
+  "displayName": "string",
+  "locationEmailAddress": "string",
+  "locationUri": "string",
+  "locationType": "string",
+  "uniqueId": "string",
+  "uniqueIdType": "string"
+}
+
+
 type WorkHours struct{
   Day string
   TimeSlots []WorkTimeSlot
