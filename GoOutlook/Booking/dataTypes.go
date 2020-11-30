@@ -2,6 +2,7 @@ package main
 
 import(
   "time"
+  "github.com/michaeldcanady/GoOutlook/GoOutlook"
 )
 
 type SchedulingPolicy struct{
@@ -13,16 +14,15 @@ type SchedulingPolicy struct{
 }
 
 type Location struct{
-  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
-  "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
-  "displayName": "string",
-  "locationEmailAddress": "string",
-  "locationUri": "string",
-  "locationType": "string",
-  "uniqueId": "string",
-  "uniqueIdType": "string"
+  Address PhysicalAddress
+  Coordinates outlook.GeoCoordinates
+  DisplayName string
+  LocationEmailAddress string
+  LocationUri string
+  LocationType string
+  UniqueId string
+  UniqueIdType string
 }
-
 
 type WorkHours struct{
   Day string
@@ -34,7 +34,13 @@ type WorkTimeSlot struct{
   End time.Time
 }
 
-type physicalAddress struct{
+type Reminder struct{
+  Message string
+  Offset time.Time
+  Recipients string
+}
+
+type PhysicalAddress struct{
   City string
   CountryOrRegion string
   PostalCode string

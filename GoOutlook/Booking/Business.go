@@ -5,7 +5,7 @@ import(
 )
 
 type Business struct{
-  address physicalAddress
+  address PhysicalAddress
   businessHours []WorkHours
   businessType string
   defaultCurrencyIso string

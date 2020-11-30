@@ -1,9 +1,5 @@
-package main
+package outlook
 
 import(
-  "fmt"
-)
 
-func main(){
-  fmt.Println("WORKING")
-}
+)
