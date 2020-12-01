@@ -10,7 +10,7 @@ type Drive struct{
   createdBy            IdentitySet
   createdDateTime      time.Time
   description          string
-  driveType": "personal | business | documentLibrary",
+  driveType            string
   following": [{"@odata.type": "microsoft.graph.driveItem"}],
   items": [ { "@odata.type": "microsoft.graph.driveItem" } ],
   lastModifiedBy       IdentitySet
