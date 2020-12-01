@@ -18,7 +18,7 @@ type DriveItem struct{
   package           Package
   pendingOperations PendingOperations
   photo             Photo
-  publication": {"@odata.type": "microsoft.graph.publicationFacet"},
+  publication       PublicationFacet
   remoteItem": { "@odata.type": "microsoft.graph.remoteItem" },
   root": { "@odata.type": "microsoft.graph.root" },
   searchResult": { "@odata.type": "microsoft.graph.searchResult" },
