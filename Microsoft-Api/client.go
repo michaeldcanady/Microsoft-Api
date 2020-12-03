@@ -11,6 +11,8 @@ import (
 	"net/url"
 	"strings"
 	"time"
+	"runtime"
+	"os/exec"
 )
 
 const (
@@ -21,7 +23,7 @@ const (
 	// DefaultOAuthTokenURL the url used to exchange a user's refreshToken for a usable accessToken
 	DefaultOAuthTokenURL = "https://login.microsoftonline.com/common/oauth2/v2.0/token"
 	// DefaultAuthScopes the set of permissions the client will request from the user
-	DefaultAuthScopes = "mail.read calendars.read user.read offline_access"
+	DefaultAuthScopes = "Files.Read offline_access"
 	// DefaultQueryDateTimeFormat time format for the datetime query parameters used in outlook
 	DefaultQueryDateTimeFormat = "2006-01-02T15:04:05Z"
 
@@ -51,8 +53,10 @@ type Client struct {
 	scope       string
 }
 
-func GetAccessToken(){
-
+func (C *Client) GetAccessToken(){
+	//var resp *http.Response
+	tokenURL := fmt.Sprintf("https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=%s&scope=%s&response_type=token&redirect_uri=%s",C.appID,C.scope,C.redirectURI)
+	openbrowser(tokenURL)
 }
 
 // ClientOpt functions to configure options on a Client.
@@ -229,4 +233,23 @@ func (client *Client) NewSession(refreshToken string) (*Session, error) {
 		return nil, err
 	}
 	return session, nil
+}
+
+func openbrowser(url string) {
+	var err error
+
+	switch runtime.GOOS {
+	case "linux":
+		err = exec.Command("xdg-open", url).Start()
+	case "windows":
+		err = exec.Command("rundll32", "url.dll,FileProtocolHandler", url).Start()
+	case "darwin":
+		err = exec.Command("open", url).Start()
+	default:
+		err = fmt.Errorf("unsupported platform")
+	}
+	if err != nil {
+		panic(err)
+	}
+
 }

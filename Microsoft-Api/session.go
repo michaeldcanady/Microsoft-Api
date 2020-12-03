@@ -99,7 +99,6 @@ func (session *Session) refreshAccessToken() error {
 	body.Set("client_secret", session.client.appSecret)
 	body.Set("refresh_token", session.refreshToken)
 	body.Set("redirect_uri", session.client.redirectURI)
-	body.Set("scope", session.client.scope)
 	body.Set("grant_type", "refresh_token")
 
 	// I suppose it's possible for this to change the media type of other requests being made at essentially the same time, will update sometime
